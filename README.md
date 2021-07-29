@@ -1,2 +1,2 @@
-# netflix-clone
-Projeto clonando a interface da netflix
+# Netflix clone
+### Projeto clonando a interface da netflix
