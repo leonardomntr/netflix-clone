@@ -1,0 +1,145 @@
+:root{
+    --vermelho: #e50914;
+    --preta: #141414;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+/* elemento base */
+
+body{
+    background:var(--preta);
+    font-family: 'Times New Roman', Times, serif;
+    color: white; 
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 60px;
+}
+
+header .logo{
+    color: var(--vermelho);
+    font-family: 'Arial Black';
+    font-size: 30px;
+    margin-left: 5px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #fff;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color: #AAA;
+}
+
+/*filme principal */
+.filme-principal{
+    font-size: 16px;
+    background:linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('/assets/img/capa-lucifer.jpg');
+    height: 650px;
+    background-size:cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .container{
+    margin-left: 60px;
+    width: 50%;
+}
+
+.filme-principal .descricao{
+    margin-bottom: 40px;
+    font-size: 25px;
+    margin-top: 15px; 
+}
+
+.imagem-titulo{
+    height: 200px;
+    margin-top: 5%; 
+}
+
+.botao1:visited{
+    text-decoration: none;
+}
+
+.botao1{
+    background-color: #fff;
+    border: none;
+    padding: 15px 40px;
+    margin-right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: .1s ease all;
+    border-radius: 4%;
+    text-decoration: none !important;
+}
+
+.botoes a{
+    text-decoration: none;
+    color: black;
+}
+
+
+.botao2{
+    background-color: rgba(110, 93, 93, 0.411);
+    border: none;
+    color: white;
+    padding: 15px 40px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: .1s ease all;
+    border-radius: 4%;
+    
+}
+
+.botao1:hover{
+    background-color: rgba(255, 255, 255, 0.726);
+}
+
+.botao2:hover{
+    background-color: rgba(110, 93, 93, 0.288);
+}
+
+.botao1 i{
+    margin-right: 10px;
+}
+
+.botao2 i{
+    margin-right: 10px;
+}
+
+.elenco{
+    margin-top: 150px;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+/*resposividade*/
+@media screen and (max-width:900px) {
+    header .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .botao1{
+        margin-bottom: 5px;
+    }
+}
